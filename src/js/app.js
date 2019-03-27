@@ -181,3 +181,7 @@ function showGedModal(e) {
     $("#modal-showGed .modal-title").text(type);
     $("#modal-showGed iframe").attr("src", url);
 }
+
+$(window).on('load', function() {
+    $('body').fadeIn();
+});
