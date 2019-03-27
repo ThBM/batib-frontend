@@ -36,8 +36,15 @@ export default function($) {
     $.fn.formatDate = function() {
         $(this).each(function() {
             var text = $(this).text();
-            var date = moment(text, "YYYY-MM-DD");
-            $(this).text(date.format("DD/MM/YYYY"));
+            if(/^[0-9]+-[0-1]?[0-9]-[0-3][0-9]$/.test(text))
+                var date = moment(text, "YYYY-MM-DD");
+            else
+                var date = moment(text, "DD/MM/YYYY");
+
+            if(date.isValid())
+                $(this).text(date.format("DD/MM/YYYY"));
+            else
+                $(this).text("");
         });
         return this;
     };
