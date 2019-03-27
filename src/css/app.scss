@@ -1,0 +1,208 @@
+body {
+    font-size: 0.75em;
+}
+
+.content {
+    padding: 10px 0px;
+}
+
+.sidebar-hidden .sidebar{margin-left:-180px}
+@media (max-width:991.99px){.sidebar{margin-left:-180px}}
+.sidebar-fixed .content{margin-left:180px}
+.sidebar{width: 180px;}
+@media (max-width:991.99px){.sidebar-fixed .content{margin-left:0}}
+.sidebar-hidden .content{margin-left:0}
+
+@media print {
+    #selectBox-group {
+        min-width: 200px;
+        width: 30%;
+    }
+    #selectBox-group .changeSelectbox {
+        display: none;
+    }
+    #selectBox-group select {
+        font-size: 10px;
+    }
+
+    #chemins {
+        font-size: 0.8em !important;
+    }
+    .content {
+        margin-left: 0px;
+    }
+}
+
+@media screen {
+    @media (max-width:400px) {
+        .content {
+            padding: 0px;
+        }
+        .container-fluid {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        #selectBox-group, #chemins {
+            display: none;
+        }
+    }
+
+    @media (min-width: 700px) and (max-width: 1300px) {
+        #selectBox-group {
+            min-width: 200px;
+            width: 30%;
+        }
+        #selectBox-group .changeSelectbox {
+            display: none;
+        }
+        #selectBox-group select {
+            font-size: 10px;
+        }
+
+        #chemins {
+            font-size: 0.8em !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .modal-xl {
+            width: 90%;
+            max-width:1200px;
+        }
+    }
+}
+
+
+.edit-loading {
+    background-color: #9d9d9d;
+}
+
+.td-icon {
+    width: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.td-icon .btn {
+    text-align: center;
+    padding: 0px 7px;
+}
+
+.invalid-feedback {
+    display: inherit;
+}
+
+.flashes-container {
+    position: fixed;
+    bottom: 10px;
+    right: 32px;
+    left: 32px;
+    z-index: 1;
+    display: none;
+}
+.flashes-container .flashes {
+    float: right;
+}
+
+.prix {
+    white-space: nowrap;
+}
+
+.table td, .table th {
+    padding: 0.4rem;
+}
+
+.table td.select {
+    padding: 0rem;
+    vertical-align: middle;
+}
+
+.table td.select select {
+    border: none;
+    height: 32px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.bg-red {
+    background-color: rgba(255,105,132,0.31) !important;
+}
+
+.bg-orange {
+    background-color: rgba(255,188,127,0.31) !important;
+}
+
+.bg-green {
+    background-color: rgba(131,255,130,0.31) !important;
+}
+
+.navbar .navbar-brand {
+    width: 184px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+#chemins {
+    margin-left: 10px;
+    font-size: large;
+}
+
+.page-header .navbar-nav .nav-item {
+    min-width: 40px;
+}
+
+.bg-edit:not(select) {
+    background-color: rgba(66, 165, 245, 0.05);
+}
+.bg-edit input {
+    border: 0;
+    background: none;
+}
+.bg-edit input:focus {
+    background: none;
+}
+
+td.select select {
+    background-color: rgba(66, 165, 245, 0);
+}
+
+.form-control:focus {
+    border-color: #42a5f5;
+}
+
+.textarea {
+    white-space: pre;
+}
+
+.modal-full {
+    max-width: none;
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 28px;
+    right: 28px;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    height: 100%;
+}
+
+.modal-full .modal-content .modal-body {
+    height: fit-content;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.card {
+    overflow-x: auto;
+}
+
+//@import url("https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css");

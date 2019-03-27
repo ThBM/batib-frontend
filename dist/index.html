@@ -1,0 +1,460 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Batib, by Nextweb</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+</head>
+<body class="sidebar-fixed header-fixed  ">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a class="navbar-brand sidebar-mobile-toggle d-lg-none" href="#">
+            <img src="img/batib.png" alt="logo" style="height: 45px;">
+        </a>
+
+        <a class="navbar-brand sidebar-toggle d-none d-lg-block" href="#">
+            <img src="img/batib.png" alt="logo" style="height: 45px;">
+        </a>
+
+
+
+
+
+        <ul class="navbar-nav ml-auto">
+
+
+
+
+
+            <li class="nav-item">
+                <a href="/administratif/suivi/alertes">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-danger">201</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="small ml-1 d-md-down-none">thibault.bm@nextweb-sas.fr</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a href="/profil/user" class="dropdown-item">
+                        <i class="fa fa-user"></i> Profil
+                    </a>
+
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-edit"></i>
+                        Lecture / Ecriture
+                    </a>
+
+                    <a href="/email" class="dropdown-item">
+                        <i class="fa fa-envelope"></i> Envoyer un email
+                    </a>
+
+                    <a href="https://batib.pro/category/documentation/" class="dropdown-item" target="_blank">
+                        <i class="fa fa-question-circle"></i> Aide
+                    </a>
+
+                    <a href="/logout" class="dropdown-item">
+                        <i class="fa fa-lock"></i> Déconnexion
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+
+                    <li class="nav-item">
+                        <a href="/dashboards" class="nav-link ">
+                            <i class="fa fa-tachometer-alt"></i> Tableaux de bord
+                        </a>
+                    </li>
+
+
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-bullhorn"></i> Promotions <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/promotions" class="nav-link ">
+                                    Liste des promotions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/promotion/fiche" class="nav-link ">
+                                    Informations
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/promotion/ged" class="nav-link ">
+                                    GED
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-shopping-cart"></i> Prospects <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/prospects" class="nav-link ">
+                                    Liste des prospects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/prospect/informations" class="nav-link ">
+                                    Dossier
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/prospect/historique" class="nav-link ">
+                                    Historique
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/prospect/ged" class="nav-link ">
+                                    GED
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="/clients" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-users"></i> Clients <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/clients" class="nav-link ">
+                                    Liste des clients
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/client/suiviAdministratif" class="nav-link ">
+                                    Dossier
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/client/chantier" class="nav-link ">
+                                    Travaux
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/client/appelsFonds" class="nav-link ">
+                                    Appels de fonds
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/client/reserves" class="nav-link ">
+                                    Réserves / SAV
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/client/ged" class="nav-link ">
+                                    GED
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="/artisans" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-industry"></i> Artisans <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/artisans" class="nav-link ">
+                                    Liste des artisans
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/artisan/informations" class="nav-link ">
+                                    Dossier
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/artisan/specialites" class="nav-link ">
+                                    Spécialités
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/artisan/suiviActivite/marches" class="nav-link ">
+                                    Suivi d&#039;activité
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/artisan/ged" class="nav-link ">
+                                    GED
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-home"></i> Maisons <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/maisons" class="nav-link ">
+                                    Liste des maisons
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/maison/caracteristiques" class="nav-link ">
+                                    Caractéristiques
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/maison/debours" class="nav-link ">
+                                    Débours
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-chart-line"></i> Administratif <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/administratif/factures/fournisseurs" class="nav-link ">
+                                    Factures
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/tresorerie" class="nav-link ">
+                                    Trésorerie
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/suivi/alertes" class="nav-link ">
+                                    Suivi d&#039;activité
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/reporting/promotions" class="nav-link ">
+                                    Reporting
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/courriers" class="nav-link ">
+                                    Courriers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/comptabilite/periodes" class="nav-link ">
+                                    Comptabilité
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/administratif/ged" class="nav-link ">
+                                    GED
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-cog"></i> Configuration <i class="fa fa-caret-left"></i>
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a href="/configuration/societe" class="nav-link ">
+                                    Sociétés
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/configuration/users" class="nav-link ">
+                                    Utilisateurs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/configuration/lotsRef" class="nav-link ">
+                                    Lots de référence
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/configuration/articles" class="nav-link ">
+                                    Bibliothèque d&#039;articles
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/configuration/plannings" class="nav-link ">
+                                    Plannings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/configuration/listes/supportPromotion" class="nav-link ">
+                                    Listes paramétrables
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/superadmin/dates" class="nav-link ">
+                            <i class="fas fa-sync-alt"></i> Superadmin
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+
+            <div class="flashes-container" style="height: auto;">
+                <div class="flashes">
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <img src="img/batib.png" alt="BATIB" style="height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="text-center">Bienvenue sur Batib</h1>
+                        <!--
+                        <p>
+                            Batib est votre logiciel de gestion pour votre activité de Constructeur de maisons individuelles.
+                        </p>
+                        <p>
+                            Explications globale sur l'utilisation de BATIB.
+                        </p>
+                        <p>
+                            Expliquer que l'aide est toujours disponible en haut à droite. mettre l'adresse de contact. Mettre Teamviewer NEXTWEB.
+                        </p>
+                        <p>
+                            Profiter de notre offre de parrainnage !
+                        </p>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="modal fade" id="modal-removeConfirmation" tabindex="-1" role="dialog" aria-labelledby="removeConfirmation" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger border-0">
+                            <h5 class="modal-title text-white">Confirmation suppression</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            Souhaitez-vous vraiment supprimer : <span id="label"></span> ?
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link" data-dismiss="modal">Annuler</button>
+                            <a class="btn btn-danger" href="#" id="confirmationButton">Supprimer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modal-showGed" tabindex="-1" role="dialog" aria-labelledby="show" aria-hidden="true">
+                <div class="modal-dialog modal-full" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary border-0">
+                            <h5 class="modal-title text-white"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body p-0">
+                            <iframe src="" style="width: 100%; height: 100%"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+    console.log(Datatable);
+</script>
+
+<script>
+    droitUserEcriture = true;
+</script>
+<!--<script src="/carbon/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/js.cookie.min.js"></script>
+<script src="/carbon/vendor/popper.js/popper.min.js"></script>
+<script src="/carbon/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/carbon/vendor/chart.js/chart.min.js"></script>
+<script src="/carbon/js/carbon.js"></script>
+
+
+<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/currency.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/datetime-moment.js"></script>
+<script>
+    $.fn.dataTable.moment( 'DD/MM/YYYY' );
+    $.fn.dataTable.ext.type.order['number-pre'] = function ( d ) {
+        return Number(d.replace(/[^\.0-9]/g, ""));
+    };
+</script>
+
+<script src="/js/date.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/formatData.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/toNumber.js"></script>
+<script src="/js/addEdition.js"></script>
+<script src="/js/addSortable.js"></script>-->
+
+</body>
+</html>
