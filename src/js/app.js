@@ -163,6 +163,7 @@ function addFlash(type, message) {
         $(".flashes").text("");
     });
 }
+global.addFlash = addFlash;
 
 function removeConfirm(e) {
     var title = $(e).data("title");
