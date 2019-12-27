@@ -27,8 +27,7 @@
     "jquery-ui": "^1.12.1",
     "js-cookie": "^2.2.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.11.0",
-    "popper.js": "^1.14.7"
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "simple-line-icons": "^2.4.1"
   }
