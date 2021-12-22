@@ -13,6 +13,7 @@ import Chart from 'chart.js';
 window.Chart = Chart;
 
 //Carbon CSS & JS
+import "../css/custom.scss";
 import '../carbon/css/styles.css';
 import '../carbon/js/carbon';
 

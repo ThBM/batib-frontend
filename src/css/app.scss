@@ -1,5 +1,7 @@
 body {
     font-size: 0.75em;
+    background-color: var(--vcmi-soft-grey);
+    color: black
 }
 
 body {
@@ -9,6 +11,19 @@ body {
 .content {
     padding: 10px 0px;
 }
+
+nav .nav-link, nav .nav-link {
+    color: white !important;
+}
+
+.sidebar-nav {
+    background-color: var(--vcmi-ultraviolet);
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items, .sidebar .nav-dropdown.open .nav-dropdown-items {
+    background-color: var(--vcmi-lavande);
+}
+
 
 .sidebar-hidden .sidebar{margin-left:-180px}
 @media (max-width:991.99px){.sidebar{margin-left:-180px}}
