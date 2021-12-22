@@ -16,12 +16,34 @@ nav .nav-link, nav .nav-link {
     color: white !important;
 }
 
+.navbar {
+    background-color: var(--vcmi-bleu-abysse);
+}
+
 .sidebar-nav {
     background-color: var(--vcmi-ultraviolet);
 }
 
 .sidebar .nav-dropdown .nav-dropdown-items, .sidebar .nav-dropdown.open .nav-dropdown-items {
+    background-color: var(--vcmi-ultraviolet);
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items, .sidebar .nav-dropdown.open .nav-dropdown-items {
+    background-color: var(--vcmi-ultraviolet);
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items .nav-link {
+    margin: 4px 18px;
+    padding: 4px 6px;
+    border-radius: 5%;
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items .nav-link:hover, .sidebar .nav-dropdown .nav-dropdown-items .nav-link:focus, .sidebar .nav-dropdown .nav-dropdown-items .nav-link.active {
     background-color: var(--vcmi-lavande);
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items .nav-link:first-child {
+    margin-top: 0px;
 }
 
 
